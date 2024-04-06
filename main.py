@@ -1,18 +1,13 @@
-dictionary = {"key" : "value",
-               "anahtar" : "değer"}
-               
-meme_dict = {
-            "CRİNGE": "Garip ya da utandırıcı bir şey",
-            "LOL": "Komik bir şeye verilen cevap",
-}
+import random
+characters="+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+password_length=int(input("Şifren kaç haneli olsun?"))
+password= ""
 
+for i in range(password_length):
+    character= random.choice(characters)
 
-word = input("Anlamadığınız bir kelime yazın (hepsini büyük harflerle yazın!): ")
+    password += character
 
+print ("işte şifren")
+print(password)
 
-if word in meme_dict.keys():
-    print("Bu kelimenin karşılığı:" , meme_dict[word])
-    
-else:
-    print("Kelime eşleşmiyor")
-    
